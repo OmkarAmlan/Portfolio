@@ -1,0 +1,148 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+/* .links {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+} */
+
+.links {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+  position: fixed;
+  top: 210px;
+  margin-top: 25px;
+  align-items: center;
+  left: 25px;
+  margin: 20px;
+  margin-bottom: 25px;
+  color: #f0f0f0;
+  text-decoration: none;
+  animation: moveToRight 1.5s ease-in-out;
+  animation-delay: 10ms;
+}
+
+.links a {
+  font-style: bold;
+  margin-bottom: 10px;
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+
+/* .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('nature.gif');
+  background-size: cover;
+  background-position: center;
+} */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('bg1.jpeg');
+  background-position: center;
+  /* position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('bg1.jpeg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px); /* Apply blur filter to the background image 
+  z-index: -1;*/
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 10 10px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+div.text {
+  width: 60%;
+  padding-left: 25px;
+  box-shadow: 10 10 10px rgba(0, 0, 0, 0.2)
+}
+
+div.image {
+  width: 35%;
+}
+
+h1 {
+  color: #333;
+  font-size: 30px;
+}
+
+p {
+  color: #777;
+  font-size: 16px;
+}
+
+.logo {
+  position: absolute;
+  bottom: 20px;
+  left: 675px;
+  width: 10%;
+}
+
+.logo2 {
+  position: relative;
+  bottom: 20px;
+  left: 675px;
+  width: 100%;
+}
+
+@keyframes moveToRight {
+  0% {
+      transform: translateX(-200px);
+  }
+  60% {
+      transform: translateX(25px);
+  }
+}
+
+.links2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+  position: fixed;
+  top: 300px;
+  margin-top: 25px;
+  align-items: center;
+  left: 1425px;
+  margin: 20px;
+  margin-bottom: 25px;
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+.linksgithub:hover {
+  transition: all 0.3s linear;
+  transform: scale(1.1);
+}
+
+.linkslinkdedin:hover {
+  transition: all 0.3s linear;
+  transform: scale(1.1);
+}
