@@ -1,0 +1,256 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #1e2329;
+    color: #ffffff;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 2000px;
+    background-color: #161a1f;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.profile-section {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.menu-item {
+    margin: 10px 0;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.menu-item:hover {
+    color: #4caf50;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: #2c3238;
+    padding: 15px;
+    border-radius: 5px;
+    width: calc(50% - 10px);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.card img {
+    width: 110px;
+    height: auto;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.card p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #cccccc;
+}
+
+.contact-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.sidebar-right {
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 12%;
+    justify-content: flex-start;
+    background-color: #161a1f;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.icon-btn:hover {
+    background-color: #2c3238;
+    border-radius: 5px;
+}
+
+.contact-form {
+    background-color: #2c3238;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #000;
+}
+
+.contact-form button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+/* Custom scrollbar for WebKit browsers */
+::-webkit-scrollbar {
+    width: 5px; /* Width of the scrollbar */
+    height: 12px; /* Height of the scrollbar (for horizontal scrollbar) */
+}
+
+::-webkit-scrollbar-track {
+    background: #1e2329; /* Track color */
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4caf50; /* Thumb color */
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #45a049; /* Thumb color on hover */
+}
+
+/* Custom scrollbar for Firefox */
+* {
+    scrollbar-width: thin; /* Thin scrollbar */
+    scrollbar-color: #4caf50 #1e2329; /* Thumb color and track color */
+}
+
+/* Additional styles for modal and main content */
+.modal-content, .main-content {
+    overflow: auto; /* Ensure scrollbars are shown if content overflows */
+}
+/* Footer styles */
+.footer {
+    background-color: #161a1f;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #2c3238;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+.typewriter {
+    display: inline-block;
+    overflow: hidden; /* Ensures the text doesn’t overflow */
+    border-right: .15em solid orange; /* Cursor effect */
+    white-space: nowrap; /* Prevents wrapping */
+    animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 20%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+}
